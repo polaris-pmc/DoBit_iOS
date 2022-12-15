@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1733C021A7CE0BF551496A9B /* Pods_DoBit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C643405698E83F29B6EA6A /* Pods_DoBit.framework */; };
 		254EC8B528C9E9F800C6C071 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EC8B428C9E9F800C6C071 /* Constants.swift */; };
+		25767FD02947FC5D00398623 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25767FCF2947FC5D00398623 /* SnapKit */; };
 		D409C15126ADBD7A00FB4DDF /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D409C15026ADBD7A00FB4DDF /* GoalViewModel.swift */; };
 		D43FFC2926B6D8BD00FD47BA /* SpoqaHanSansNeo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D43FFC2426B6D8BC00FD47BA /* SpoqaHanSansNeo-Bold.otf */; };
 		D43FFC2A26B6D8BD00FD47BA /* SpoqaHanSansNeo-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D43FFC2526B6D8BC00FD47BA /* SpoqaHanSansNeo-Medium.otf */; };
@@ -141,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1733C021A7CE0BF551496A9B /* Pods_DoBit.framework in Frameworks */,
+				25767FD02947FC5D00398623 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +374,9 @@
 			dependencies = (
 			);
 			name = DoBit;
+			packageProductDependencies = (
+				25767FCF2947FC5D00398623 /* SnapKit */,
+			);
 			productName = DoBit;
 			productReference = D4D874D2268B3D3600967D94 /* DoBit.app */;
 			productType = "com.apple.product-type.application";
@@ -400,6 +405,9 @@
 				Base,
 			);
 			mainGroup = D4D874C9268B3D3600967D94;
+			packageReferences = (
+				25767FCE2947FC5D00398623 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D4D874D3268B3D3600967D94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -680,7 +688,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeus.DoBit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -705,7 +713,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeus.DoBit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -736,6 +744,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25767FCE2947FC5D00398623 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25767FCF2947FC5D00398623 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25767FCE2947FC5D00398623 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4D874CA268B3D3600967D94 /* Project object */;
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class GoalViewController: UIViewController {
     @IBOutlet var viewModel: IdentityViewModel!
@@ -14,11 +15,14 @@ class GoalViewController: UIViewController {
     @IBOutlet weak var goalTableView: UITableView!
     @IBOutlet weak var addButton: UIButton!
     
+   
+    
     let refreshControl = UIRefreshControl()
     var updateInfo: (status: String, idx: Int)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         goalTableView.delegate = self
         goalTableView.dataSource = self
         
@@ -169,3 +173,4 @@ extension GoalViewController: UITableViewDelegate, UITableViewDataSource {
         performSegue(withIdentifier: "showDetailView", sender: indexPath.row)
     }
 }
+
